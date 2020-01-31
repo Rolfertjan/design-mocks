@@ -1,0 +1,111 @@
+body {
+    padding: 24px 0px;
+    margin: 0px;
+}
+
+
+
+.container-filter {
+    background-color: #f6f6f6;
+    padding: 12px 4px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.filter {
+    font-family: arial;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    margin: 12px;
+    width: auto;
+    max-width: 300px;
+}
+
+.select {
+    height: 40px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+
+.container-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 24px;
+    max-width: 400px;
+    margin: auto;
+    padding: 0px 16px;
+}
+
+.grid-item {
+    background-color: #ececec;
+    text-align: center;
+    margin-bottom: 24px;
+    height: 0px;
+    padding-top: 150%;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.08),0 4px 6px 0 rgba(0,0,0,.12);
+    
+}
+
+@media only screen and (min-width: 768px) {
+    body {padding: 40px 0px;}
+    .container-grid {
+        grid-template-columns: auto auto;
+        max-width: 704px;  
+    }
+    .container-filter {
+        padding: 12px 20px;
+        flex-direction: row;
+    }
+    
+    .filter {
+        width: 12.5%;
+        min-width: 160px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {padding: 40px 0px;}
+    .container-grid {
+        grid-template-columns: auto auto auto;
+        max-width: 960px;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px) {
+    body {padding: 40px 0px;}
+    .container-grid {
+        grid-template-columns: auto auto auto auto;
+        max-width: 1376px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    body {padding: 40px 0px;}
+    .container-grid {
+        grid-template-columns: auto auto auto auto auto;
+        max-width: 1856px;
+    }
+}
+
+.container-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    justify-content: space-between;
+    margin-top: 300px;
+}
+
+.card {
+    height: 300px;
+    flex-basis: 25%;
+    background-color: antiquewhite;
+    padding: 12px;
+}
