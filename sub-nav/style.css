@@ -16,6 +16,10 @@ h1 {
 
 a {
     text-decoration: none;
+    font-family: HelveticaNeue-Medium;
+    font-size: 16px;
+    line-height: 40px;
+    color: #4a4a4a;
 }
 
 .container {
@@ -42,27 +46,31 @@ a {
         }
 
         li {
-            padding: 8px 0px 8px 16px; 
-            font-family: HelveticaNeue-Medium;
-            font-size: 16px;
-            line-height: 24px;
-            color: #4a4a4a;
+            padding-left: 16px;
+            
         }
 
-        li:hover {
-            background-color: #FDEFEA;
-            border-left: 4px solid #ED5D2A;
-            color: #4a4a4a;
+        a:hover {
+            color: #ED5D2A;
+            font-family: HelveticaNeue-Bold;
         }
 
-        li:target {
-            border-left: 4px solid #3c96dc;
+        a:target {
             color: #3c96dc;
             font-family: HelveticaNeue-Bold;
         }
 
-         li:target:hover {
-            background-color: white;
+        a:target::before {
+            width: 4px;
+            height: 40px;
+            background-color: #3c96dc;
+            content: "";
+            position: absolute;
+            margin-right: 16px;
+        }
+
+         a:target:hover {
+            color: #3c96dc;
         }
 
 
@@ -93,14 +101,14 @@ a {
             padding: 8px;
         }
     
-        li:hover {
-            border-bottom: 4px solid #ED5D2A;
-            border-left: 0px;
-        }
-    
-        li:target {
+        a:target {
             border-bottom: 4px solid #3c96dc;
             border-left: 0px;
+            padding-bottom: 16px;
+        }
+    
+        a:target::before {
+            display: none;
         }
     
         
