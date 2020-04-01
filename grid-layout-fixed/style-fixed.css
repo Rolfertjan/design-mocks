@@ -1,0 +1,191 @@
+body {
+    padding: 24px 0px;
+    margin: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: HelveticaNeue;
+    color: #4a4a4a;
+}
+
+h1 {
+    font-family: georgia;
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-section-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 24px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+    .dropdown {
+        height: 40px;
+        width: 200px;
+        background-color: lightgrey;
+    }
+
+.container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+}
+
+    .card-container {
+        flex: 1 100%;
+        padding-bottom: 7.5%;
+        max-width: 450px;
+    }
+
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+
+            .card-image {
+                object-fit: contain;
+                height: 0;
+                padding-top: 56.25%;
+                background-image: url(Assets/11307231843_73de1ff25e_c.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                margin-bottom: 16px;
+            }
+
+            .card-data {
+                padding: 0px 16px;
+            }
+
+                .card-title {
+                    margin-bottom: 16px;
+                }
+
+                    .card-h3 {
+                        margin: 0px 0px 8px 0px;
+                    }
+
+                    .card-p {
+                        margin: 0px; 
+                        font-size: 14px;
+                    }
+
+                .card-info {
+                    margin-bottom: 24px;
+                }
+
+                    .card-info > .item {
+                        margin-bottom: 16px;
+                    }
+
+                        .card-info > .item > .icon {
+                            float: left;
+                            padding: 4px;
+                            margin-right: 8px;
+                        }
+
+            .card-action { 
+                padding: 0px 16px;
+                padding-bottom: 16px;
+            }
+
+                .card-link {
+                    display: inline-block;
+                    font-family: HelveticaNeue-bold;
+                    color: #ED5D2A;
+                }
+
+                .card-action > .icon {
+                    float: right; 
+                    padding: 4px;
+                }
+
+
+
+@media only screen and (min-width: 660px) {
+    .container-section-title {
+        padding-left: 4%;
+        padding-right: 4%;
+        max-width: 650px;
+    }
+        
+    .container-grid {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    
+    .card-container {
+        flex: 1 46%;
+        padding: 2%;
+        min-width: 288px;
+        max-width: 304px;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .container-section-title {
+       max-width: 980px;
+    }
+    
+    .container-grid {
+        
+    }
+    
+    .card-container {
+        flex: 1 30.33%;
+        padding: 1.5%;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px) {
+    .container-section-title {
+        padding-left: 6%;
+        padding-right: 6%;
+        max-width: 1310px;
+    }
+    
+    .container-grid {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .card-container {
+        flex: 1 23%;
+        padding: 1%;
+    }
+    
+}
+
+@media only screen and (min-width: 1920px) {
+    .container-section-title {
+        padding-left: 6%;
+        padding-right: 6%;
+        max-width: 1670px;
+    }
+    
+    .container-grid {
+    }
+    
+    .card-container {
+        flex: 1 18%;
+        padding: 1%;
+    }
+    
+}
